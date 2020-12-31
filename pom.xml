@@ -73,10 +73,10 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-			</plugin>
+			<!--<plugin>-->
+				<!--<groupId>org.apache.maven.plugins</groupId>-->
+				<!--<artifactId>maven-checkstyle-plugin</artifactId>-->
+			<!--</plugin>-->
 			<plugin>
 				<groupId>io.spring.javaformat</groupId>
 				<artifactId>spring-javaformat-maven-plugin</artifactId>
@@ -85,12 +85,12 @@
 	</build>
 
 	<reporting>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-			</plugin>
-		</plugins>
+		<!--<plugins>-->
+			<!--<plugin>-->
+				<!--<groupId>org.apache.maven.plugins</groupId>-->
+				<!--<artifactId>maven-checkstyle-plugin</artifactId>-->
+			<!--</plugin>-->
+		<!--</plugins>-->
 	</reporting>
 
 	<dependencyManagement>
@@ -138,6 +138,7 @@
 					<url>https://repo.spring.io/libs-snapshot-local</url>
 					<snapshots>
 						<enabled>true</enabled>
+						<updatePolicy>always</updatePolicy>
 					</snapshots>
 					<releases>
 						<enabled>false</enabled>
